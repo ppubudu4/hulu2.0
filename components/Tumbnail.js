@@ -16,6 +16,7 @@ const Tumbnail = forwardRef(({ result }, ref) => {
         height={1080}
         width={1920}
         layout='responsive'
+        alt={result?.title || result?.original_title}
       />
       <div className='p-2'>
         <p className='truncate max-w-md'>{result.overview}</p>
